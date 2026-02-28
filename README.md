@@ -12,10 +12,12 @@ As it's supposed to run on a VM (virt-manager), this setup is quite frugal (in t
 
 ## instructions (for future me)
 
-0. Clean install of Debian 12 with just `ssh-server` and minimal drivers 
+0.
+Clean install of Debian 12 with just `ssh-server` and minimal drivers 
 (this config might be ok: 30GBs of space, 8GBs of RAM, 3/4 cpus)
 
-1. log as 'root', and run:
+1.
+log as 'root', and run:
 
 ```bash
 apt update && apt upgrade -y
@@ -24,13 +26,15 @@ MAIN_USER=$(getent passwd 1000 | cut -d: -f1)
 usermod -aG sudo $MAIN_USER
 ```
 
-2. log as <USER>, and clone this repo and cd into the directory:
+2. 
+log as <USER>, and clone this repo and cd into the directory:
 
 ```bash
 git clone https://github.com/garrotini/set_deb12
 ```
 
-3. run the scrips as indicated:
+3. 
+run the scrips as indicated:
     - 1_pkgs.sh
     - 2_iosevka.sh
     - 3_dot_sh
@@ -58,7 +62,8 @@ it spins up at around 200/230MB of RAM, which is quite amazing taking in conside
 - https://app.daily.dev/sources/breadonpenguins
 - https://larbs.xyz
 
-
 ### random screenshot (because why not...?)
+
+![demo_desktop](demo_desktop.jpg)
 
 
