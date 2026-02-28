@@ -1,6 +1,6 @@
 # minimal debian 12 setup
 
-This setup came after having a few problems trying to compile some projects for 42 school (specially those graphical computing projects, such as, fractol/so_long/fdf/cub3d/minirt)
+This setup came after having a few problems trying to compile some projects for 42 school (especially those graphical computing projects, such as, fractol/so_long/fdf/cub3d/minirt)
 
 As I'm running Fedora daily, some libraries were a bit too "modern" in comparison to 42 Lisboa systems (they're operating on Ubuntu LTS version), and I wasn't able to have a smooth experience transitioning from my computer to school's computer.
 (C standard compilers in a "fresh Fedora" install are newer (GCC 15) and do compile in a different way compared to Ubuntu 22.04 (GCC 11), and that was making all the compilations crash on my machine).
