@@ -12,12 +12,16 @@ As it's supposed to run on a VM (virt-manager), this setup is quite frugal (in t
 
 ## instructions (for future me)
 
-0.
-Clean install of Debian 12 with just `ssh-server` and minimal drivers 
-(this config might be ok: 30GBs of space, 8GBs of RAM, 3/4 cpus)
+### basic requirement
 
-1.
-log as 'root', and run:
+Clean install of Debian 12 with just `ssh-server` and minimal drivers
+(it also works on Ubuntu Server: a bit more beginner-friendlier, not need to install sudo, but it's more "bloated" -> more RAM, and it pushes you to install firefox as a snap package)
+
+VM specs: 30GBs of space, 8GBs of RAM, 3/4 cpus
+
+### after installation
+
+1. log as 'root', and run:
 
 ```bash
 apt update && apt upgrade -y
@@ -26,21 +30,26 @@ MAIN_USER=$(getent passwd 1000 | cut -d: -f1)
 usermod -aG sudo $MAIN_USER
 ```
 
-2. 
-log as <USER>, and clone this repo and cd into the directory:
+2. log as <USER>, and clone this repo and cd into the directory:
 
 ```bash
 git clone https://github.com/garrotini/set_deb12
 ```
 
-3. 
-run the scrips as indicated:
-    - 1_pkgs.sh
-    - 2_iosevka.sh
-    - 3_dot_sh
+3. run the scrips as indicated:
+
+- 1_pkgs.sh
+- 2_iosevka.sh
+- 3_dot_sh
+- (0_as_root.sh is just a reminder/automated_script for `usermod -aG sudo <USER>`)
+
+### regular use
+
+log into your <USER> account and `startx`. Done!
 
 ## main ideas
 
+- (!no Login Manager installed!)
 - i3 wm
 - vim, tmux
 - terminal: alacritty
@@ -53,6 +62,8 @@ run the scrips as indicated:
 ## achievements
 
 it spins up at around 200/230MB of RAM, which is quite amazing taking in consideration price of RAM at the time: February 2026!
+besides that, I can compile all the code I need to do my next 42 project: cub3d.
+(on ubuntu it never consumes less than 360MB of RAM right after boot...)
 
 ### references and inspiration
 
@@ -60,10 +71,10 @@ it spins up at around 200/230MB of RAM, which is quite amazing taking in conside
 - https://www.tonybtw.com/
 - https://github.com/hacktheclown
 - https://app.daily.dev/sources/breadonpenguins
+- https://mischavandenburg.com/
 - https://larbs.xyz
 
-### random screenshot (because why not...?)
+
+### demo_desktop screenshot (because why not...?)
 
 ![demo_desktop](demo_desktop.jpg)
-
-
