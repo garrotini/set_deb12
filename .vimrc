@@ -3,12 +3,6 @@
 
 " vimrc tutorial: https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
 
-"	use `:Stdheader` to add 42 header in VIM
-"	according to https://github.com/42paris/42header
-"	leg g:user42 = 'marvin'
-"	let g:mail42 = 'marvin@student.42.fr'
-
-
 " Use mouse
 set mouse=a
 
@@ -65,15 +59,6 @@ set history=1000
 
 " Make wildmenu behave like similar to Bash completion.
 " set wildmode=list:longest
-
-" PLUGINS (please run :PluginInstall ---------------------------------------------------- {{{
-
-call plug#begin('~/.vim/plugged')
-"	Plug 'ghifarit53/tokyonight-vim'
-	Plug 'sheerun/vim-polyglot'
-	Plug 'cacharle/c_formatter_42.vim'
-	Plug 'preservim/nerdtree'
-call plug#end()
 
 " set termguicolors
 
