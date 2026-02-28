@@ -2,7 +2,8 @@
 
 This setup came after having a few problems trying to compile some projects for 42 school (especially those graphical computing projects, such as, fractol/so_long/fdf/cub3d/minirt)
 
-As I'm running Fedora daily, some libraries were a bit too "modern" in comparison to 42 Lisboa systems (they're operating on Ubuntu LTS version), and I wasn't able to have a smooth experience transitioning from my computer to school's computer.
+As I'm running **Fedora** daily, some libraries were a bit too "modern" in comparison to 42 Lisboa systems (they're operating on **Ubuntu LTS** version), and I wasn't able to have a smooth experience transitioning from my computer to school's computer.
+
 (C standard compilers in a "fresh Fedora" install are newer (GCC 15) and do compile in a different way compared to Ubuntu 22.04 (GCC 11), and that was making all the compilations crash on my machine).
 
 Also... 
@@ -14,10 +15,10 @@ As it's supposed to run on a VM (virt-manager), this setup is quite frugal (in t
 
 ### basic requirement
 
-Clean install of Debian 12 with just `ssh-server` and minimal drivers
-(it also works on Ubuntu Server: a bit more beginner-friendlier, not need to install sudo, but it's more "bloated" -> more RAM, and it pushes you to install firefox as a snap package)
+Clean install of **Debian 12** with just `ssh-server` and minimal drivers
+(it also works on **Ubuntu Server**: a bit more beginner-friendlier, not need to install sudo, but it's more "bloated" -> more RAM, and it pushes you to install firefox as a snap package)
 
-VM specs: 30GBs of space, 8GBs of RAM, 3/4 cpus
+**VM specs**: 30GBs of space, 8GBs of RAM, 3/4 cpus
 
 ### after installation
 
@@ -41,7 +42,7 @@ git clone https://github.com/garrotini/set_deb12
 - 1_pkgs.sh
 - 2_iosevka.sh
 - 3_dot_sh
-- (0_as_root.sh is just a reminder/automated_script for `usermod -aG sudo <USER>`)
+- (*0_as_root.sh* is just a reminder/automated_script for `usermod -aG sudo <USER>`)
 
 ### regular use
 
@@ -49,7 +50,7 @@ log into your <USER> account and `startx`. Done!
 
 ## main ideas
 
-- (!no Login Manager installed!)
+- ( ! there's no Login Manager installed ! ) 
 - i3 wm
 - vim, tmux
 - terminal: alacritty
@@ -78,3 +79,4 @@ besides that, I can compile all the code I need to do my next 42 project: cub3d.
 ### demo_desktop screenshot (because why not...?)
 
 ![demo_desktop](demo_desktop.jpg)
+
