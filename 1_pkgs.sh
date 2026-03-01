@@ -3,7 +3,7 @@
 sudo apt update && sudo apt upgrade -y
 
 echo "install basic packages"
-sudo apt install -y xorg i3 i3status dmenu alacritty thunar zip ncdu curl xwallpaper rsync sudo vim tmux git htop neofetch x11-xkb-utils firefox-esr
+sudo apt install -y xorg i3 i3status dmenu alacritty thunar zip ncdu curl xwallpaper rsync sudo vim tmux git htop neofetch x11-xkb-utils firefox-esr ffmpeg vlc
 
 echo "set keyboard to us-layout"
 setxbmap -layout us
