@@ -7,7 +7,7 @@ echo "copying i3 config"
 cp config $HOME/.config/i3/
 
 echo "copying alacritty config"
-cp alacritty.yml $HOME/.config/alacritty/
+cp alacritty.toml $HOME/.config/alacritty/
 
 echo "copying vimrc config"
 cp .vimrc $HOME/
