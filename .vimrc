@@ -1,4 +1,3 @@
-
 "   this is how a comment looks like in ~/.vimrc
 
 " vimrc tutorial: https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
