@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #run as ROOT
+apt update && apt upgrade -y;
+apt install git sudo;
 MAIN_USER=$(getent passwd 1000 | cut -d: -f1)
-
-# add user to sudo
 usermod -aG sudo $MAIN_USER
