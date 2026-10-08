@@ -24,5 +24,6 @@ alias vi3="vim $HOME/.config/i3/config"
 alias t="tmux"
 alias v="vim"
 alias ccw="cc -Wall -Werror -Wextra"
+alias gs="git status"
 EOF
 
