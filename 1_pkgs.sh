@@ -16,6 +16,7 @@ sudo apt install -y x11proto-dev xorg libxext-dev zlib1g-dev libbsd-dev
 
 # update bash.rc config
 cat >> $HOME/.bashrc << 'EOF'
+export PATH="$PATH:/usr/sbin"
 export EDITOR=vim
 alias ll="ls -lha"
 alias sbash="source $HOME/.bashrc"
