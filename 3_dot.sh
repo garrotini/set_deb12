@@ -12,6 +12,10 @@ cp alacritty.yml $HOME/.config/alacritty/
 echo "copying vimrc config"
 cp .vimrc $HOME/
 
+echo "cloning vim-plug"
+mkdir -p ~/.vim/plugged
+git clone https://github.com/junegunn/vim-plug.git ~/.vim/plugged/vim-plug
+
 echo "copying tmux config"
 cp .tmux.conf $HOME/
 
